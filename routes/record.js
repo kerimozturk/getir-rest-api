@@ -1,13 +1,8 @@
 
 module.exports = (app) => {
-const record = require('../controllers/record')
-    
-
-    // Create a new Product
- //   app.get('/', record.get);
-
-    // Retrieve all Products
-		console.log("APP POST Route");
-
-    app.post('/records', record.list);
+	const record = require('../controllers/record')
+        const url = require('../constants/api_url.js');	
+	
+	// HTTP Post Method
+	app.post(url.RECORDS, record.list);
 }

@@ -1,20 +1,14 @@
- const record  = require('../models/record');
-
-// Retrieve all products from the database.
-exports.get = (req, res) => {
-        console.log("GETTT");
-};
-
+const record  = require('../models/record');
 
 exports.list= (req, res) => {
-	console.log("POSTT");
+	
 	const payload = req.body;
 
 		// Check Request Body Keys
 		if (!payload.minCount || !payload.maxCount || !payload.startDate || !payload.endDate) {
 			return res.status(400).send({
 				code: 1,
-				msg: 'Body should be contian startDate, endDate, minCount, maxCount Key',
+				msg: 'Body should be contain startDate, endDate, minCount, maxCount',
 			})
 		}
 		// Get Request Body Key for variable
@@ -72,7 +66,7 @@ exports.list= (req, res) => {
 					}
 				);
 			}
-			return res.status(200).send({record: result, code: 0, msg: 'success'})
+			return res.status(200).send({records: result, code: 0, msg: 'success'})
 		});
 };
 
