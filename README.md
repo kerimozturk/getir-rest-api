@@ -1,6 +1,6 @@
 # getir-rest-api
 
-http://18.197.35.166:8000/api/v1/records
+POST : http://18.197.35.166:8000/api/v1/records
 
 Sample Request:
 
