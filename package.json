@@ -1,0 +1,35 @@
+{
+  "name": "getir-api",
+  "version": "1.0.0",
+  "description": "Getir Rest API with NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kerimozturk/getir-rest-api.git"
+  },
+  "keywords": [
+    "getir",
+    "restapi",
+    "nodejs",
+    "express",
+    "mongodb",
+    "aws"
+  ],
+  "author": "Kerim Ozturk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kerimozturk/getir-rest-api/issues"
+  },
+  "homepage": "https://github.com/kerimozturk/getir-rest-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
